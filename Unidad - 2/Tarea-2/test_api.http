@@ -1,0 +1,77 @@
+### 🟢 Obtener todos los productos
+GET http://localhost:3000/productos
+Content-Type: application/json
+
+###
+
+### 🟢 Obtener productos disponibles
+GET http://localhost:3000/productos/disponibles
+Content-Type: application/json
+
+###
+
+### 🟢 Obtener producto por ID
+GET http://localhost:3000/productos/1
+Content-Type: application/json
+
+###
+
+### 🟡 Agregar un nuevo producto
+POST http://localhost:3000/productos
+Content-Type: application/json
+
+{
+  "nombre": "Laptop HP",
+  "precio": 999.99,
+  "descripcion": "Laptop de alto rendimiento con pantalla Full HD",
+  "disponible": true
+}
+
+###
+
+### 🟣 Agregar otro producto (no disponible)
+POST http://localhost:3000/productos
+Content-Type: application/json
+
+{
+  "nombre": "Impresora Epson",
+  "precio": 350.50,
+  "descripcion": "Impresora multifuncional con conexión WiFi",
+  "disponible": false
+}
+
+###
+
+### 🟠 Modificar un producto existente (por ID)
+PUT http://localhost:3000/productos/1
+Content-Type: application/json
+
+{
+  "precio": 899.99,
+  "descripcion": "Laptop actualizada con descuento de temporada",
+  "disponible": true
+}
+
+###
+
+### 🔴 Eliminar un producto (por ID)
+DELETE http://localhost:3000/productos/2
+Content-Type: application/json
+
+###
+
+### 🔵 Prueba de error: producto no encontrado
+GET http://localhost:3000/productos/999
+Content-Type: application/json
+
+###
+
+### 🔵 Prueba de error: validación fallida (descripcion corta)
+POST http://localhost:3000/productos
+Content-Type: application/json
+
+{
+  "nombre": "Mouse",
+  "precio": 10,
+  "descripcion": "Corto"
+}
