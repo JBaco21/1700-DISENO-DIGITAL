@@ -1,0 +1,16 @@
+### Obtener todos
+GET http://localhost:3000/productos
+
+### Obtener disponibles
+GET http://localhost:3000/productos/disponibles
+
+### Crear producto
+POST http://localhost:3000/productos
+Content-Type: application/json
+
+{
+  "nombre": "Laptop HP",
+  "precio": 999.99,
+  "descripcion": "Laptop de alto rendimiento con pantalla Full HD",
+  "disponible": true
+}

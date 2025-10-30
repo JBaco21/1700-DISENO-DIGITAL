@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "nombre": "Laptop HP",
+    "precio": 999.99,
+    "descripcion": "Laptop de alto rendimiento con pantalla Full HD",
+    "disponible": true,
+    "fecha_ingreso": "2025-10-30T17:43:55.398Z"
+  },
+  {
+    "id": 2,
+    "nombre": "Laptop HP",
+    "precio": 999.99,
+    "descripcion": "Laptop de alto rendimiento con pantalla Full HD",
+    "disponible": true,
+    "fecha_ingreso": "2025-10-30T17:44:21.049Z"
+  }
+]
