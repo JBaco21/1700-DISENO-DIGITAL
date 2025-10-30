@@ -1,6 +1,7 @@
-# 🛍️ API de Productos - Node.js + Express
+# 🛍️ API de Gestión de Productos — Node.js + Express
 
-API RESTful que gestiona productos de una tienda usando un archivo JSON como almacenamiento (sin base de datos).
+Una **API RESTful** desarrollada con **Node.js** y **Express**, diseñada para gestionar productos de una tienda de forma sencilla.  
+Utiliza un archivo `productos.json` como base de datos local (sin conexión externa).
 
 ## 🚀 Instalación
 
